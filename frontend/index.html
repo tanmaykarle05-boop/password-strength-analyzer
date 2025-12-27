@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Password Strength Analyzer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Strength Analyzer</h1>
+      <p class="subtitle">
+        Evaluate password security using NIST-compliant principles.
+      </p>
+
+      <!-- Password Input -->
+      <div class="input-group">
+        <input
+          type="password"
+          id="passwordInput"
+          placeholder="Enter your password"
+          autocomplete="new-password"
+        />
+        <button id="togglePassword">Show</button>
+      </div>
+
+      <!-- Strength Meter -->
+      <div class="strength-meter">
+        <div id="strengthBar"></div>
+      </div>
+
+      <!-- Strength Label -->
+      <p id="strengthText">Strength: —</p>
+
+      <!-- Feedback -->
+      <ul id="feedbackList"></ul>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
